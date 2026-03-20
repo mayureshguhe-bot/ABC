@@ -1,7 +1,7 @@
 //  frequency + printing the 1st element with frequency 1 i.e. which appears once : 
 
 import java.util.HashMap;
-import java.util.Map;
+//import java.util.Map;
 
 public class HashMapExample1 {
     public static void main(String[] args) {
