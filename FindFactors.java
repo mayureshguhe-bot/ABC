@@ -15,7 +15,7 @@ public class FindFactors {
                 count++;
             }
         }
-        System.out.println((itr));
+        System.out.println(("No. of iterations:"+itr));
         return count;
 
     }
@@ -25,7 +25,7 @@ public class FindFactors {
         System.out.println("Enter the number:");
         int n = sc.nextInt();
         int count = factors(n);
-        System.out.println(count);
+        System.out.println("No. of roots:"+count);
     }
 
 }
