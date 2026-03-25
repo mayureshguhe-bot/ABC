@@ -4,7 +4,7 @@ import java.util.*;
 
 public class FindFactors {
 
-    static int factor(int num) {
+    static int factors(int num) {
         int count = 0;
         int itr = 0;
         for (int i = 1; i <= num; i++) {
@@ -24,7 +24,7 @@ public class FindFactors {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number:");
         int n = sc.nextInt();
-        int count = factor(n);
+        int count = factors(n);
         System.out.println(count);
     }
 
