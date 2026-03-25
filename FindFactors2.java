@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class FindFactors2 {
 
     static int factors(int num) {
-        int itr=0;
+        int itr = 0;
         int count = 0;
-        for (int i = 1; i*i <= num; i++)      // Instead of i*i=num you can use Math.sqrt() 
+        for (int i = 1; i * i <= num; i++) // Instead of i*i=num you can use Math.sqrt() but not the best way best way:i*i<=num
         {
             itr++;
             if (num % i == 0) {
@@ -19,7 +19,7 @@ public class FindFactors2 {
             }
 
         }
-        System.out.println("No. of iterations :"+itr);
+        System.out.println("No. of iterations :" + itr);
         return count;
 
     }
