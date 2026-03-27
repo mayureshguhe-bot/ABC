@@ -1,8 +1,10 @@
+// Optimised Version-Time Complexity:O(1)
+
 import java.util.Scanner;
 
 public class SumOfN1 {
     static int sum(int num){
-        return (num*(num+1))/2;
+        return (num*(num+1))/2;   // Gauss theorem
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
