@@ -1,4 +1,4 @@
-//Counts thse number of factors
+//Counts thse number of factors| Time Complexity:O(n)
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ public class FindFactors {
     static int factors(int num) {
         int count = 0;
         int itr = 0;
-        for (int i = 1; i <= num; i++) {
+        for (int i = 1; i <= num; i++) {           // TC: O(n)
 
             itr = itr + 1;
 

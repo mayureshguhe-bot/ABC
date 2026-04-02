@@ -1,4 +1,4 @@
-// A more Optimised Way
+// A more Optimised Way | Time Complexity: O(n) but itr: n/2
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class FindFactors1 {
     static int factors(int num) {
         int itr = 0;
         int count = 0;
-        for (int i = 1; i <= num / 2; i++) {
+        for (int i = 1; i <= num / 2; i++) {           // TC: O(n)
 
             itr++;
 
