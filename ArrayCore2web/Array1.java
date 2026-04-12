@@ -4,7 +4,7 @@
         output: 7
 */
 import java.util.*;
-class ArrayDemo{
+public class Array1{
     public static void main(String[] args) {
         // int[] arr =new int[]{2,5,1,4,8,0,8,1,3,8};
         // int N=10;
