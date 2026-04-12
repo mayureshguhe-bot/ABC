@@ -16,16 +16,16 @@ public class Array$1 {
         int itr =0;
 
         for(int i=0;i<N;i++){
-            for(int j=0;j<N;j++){
-                 itr++;
-                if(i!=j){
-                    if(arr[i]+arr[j]==K){
-                        count++;
+            for(int j=0;j<N;j++){                    // Time Complexity: O(n^2) 
+                 itr++;                              // if j=i+1 and sop(count) replace with sop(count*2) means 1 pair : 2 outcomes 
+                if(i!=j){                            // example: 2+8=10 also 8+2=10 
+                    if(arr[i]+arr[j]==K){            // then, no. of itr= 45(less)
+                        count++;                     // time complexity: o(n^2)-same 
                        
                     }
-                }
+                }                                       
             }
-        }
+        }                                               
         System.out.println("Number of pairs with arr[i]+arr[j]=K : "+count);
         System.out.println("No. of iterations : "+itr);
 
