@@ -8,22 +8,20 @@ import java.util.Arrays;
 
 public class Array$2 {
     public static void main(String[] args) {
-        int[] arr= new int[]{8,4,1,3,9,2,6,7};
-        int N=8;
-        int i=0;
-        int j=N-1;
+        int[] arr = new int[] { 8, 4, 1, 3, 9, 2, 6, 7 };
+        int N = 8;
+        int i = 0;
+        int j = N - 1;
 
-          while(i<j){
-            int temp = arr[i];
-             arr[i]=arr[j];
-             arr[j]=temp;
-             i++;
-             j--;
+        while (i < j) {              // itr : N/2 
+            int temp = arr[i];       // Time Complexity :O(n) ,  Space complexity : O(1)
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
 
+        }
 
-          }
-    
-
-          System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));
     }
 }
