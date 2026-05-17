@@ -8,7 +8,7 @@ public class FindFactors2 {
         int itr = 0;
         int count = 0;
        
-        for (int i = 1; i * i <= num; i++) // Instead of i*i=num you can use Math.sqrt() but not the best way best way:i*i<=num
+        for (int i = 1; i * i <= num; i++) // Instead of i*i=num you can use Math.sqrt() but not the best way | Best way:i*i<=num
         {
             
             itr++;
