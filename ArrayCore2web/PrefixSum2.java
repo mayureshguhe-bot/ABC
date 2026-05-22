@@ -29,7 +29,7 @@ public class PrefixSum2 {
         int N = sc.nextInt();
         int[] arr = new int[N];
         System.out.println("Enter array elements:");
-        for (int k = 0; k < N; k++)
+        for (int k = 0; k < N; k++)               // TC : O(N)
             arr[k] = sc.nextInt();
 
         System.out.println("Enter no. of queries:");
@@ -38,13 +38,13 @@ public class PrefixSum2 {
         int[] psArr = new int[N];
         psArr[0] = arr[0];
 
-        for (int i = 1; i < N; i++) {
+        for (int i = 1; i < N; i++) {             // TC : O(N)
             psArr[i] = psArr[i - 1] + arr[i];
         }
 
         int sum = 0;
-        for (int j = 1; j <= Q; j++) {
-            System.out.println("Enter start index : ");
+        for (int j = 1; j <= Q; j++) {            // TC : O(Q)    
+             System.out.println("Enter start index : ");
             int start = sc.nextInt();
             System.out.println("Enter end index : ");
             int end = sc.nextInt();
@@ -60,3 +60,5 @@ public class PrefixSum2 {
     }
 
 }
+
+// Time Complexity : O(Q+N) or O(N)      Space Complexity:O(1)
