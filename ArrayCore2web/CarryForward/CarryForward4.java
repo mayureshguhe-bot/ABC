@@ -1,4 +1,4 @@
-/* /* Given an integer array of size N.
+/*  Given an integer array of size N.
 Build an Array rightMax of size N. rightmax i contains
 the maximum from the index i to index N-1.
     Arr : [-3,6,2,4,5,2,8,-9,3,1]
