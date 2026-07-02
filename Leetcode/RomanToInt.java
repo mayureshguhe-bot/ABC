@@ -1,4 +1,4 @@
-public class Demo {
+public class RomanToInt {
     
 static int getvalue(char ch){
     switch (ch) {
