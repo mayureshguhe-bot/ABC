@@ -10,7 +10,7 @@ public class JustExample {
         char[] arr = new char[] { 'a', 'b', 'e', 'g', 'a', 'g' };
         int count = 0;
         int itr = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) { // TC: O(n^2) ,Itr:15
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] == 'a' && arr[j] == 'g') {
                     count++;
@@ -18,11 +18,11 @@ public class JustExample {
                 itr++;
             }
         }
-        System.out.println("itr: "+ itr);
-        System.out.println("count: "+ count);
+        System.out.println("itr: " + itr);
+        System.out.println("count: " + count);
         Optimised obj = new Optimised();
-        int ans=obj.optimised(arr);
-        System.out.println("count: "+ans);
+        int ans = obj.optimised(arr);
+        System.out.println("count: " + ans);
 
     }
 }
@@ -31,7 +31,7 @@ class Optimised {
     public int optimised(char[] arr) {
         int count = 0;
         int itr = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) { // TC:O(n^2) , Itr:6
             if (arr[i] == 'a') {
                 for (int j = i + 1; j < arr.length; j++) {
                     if (arr[j] == 'g') {
@@ -47,3 +47,7 @@ class Optimised {
 
     }
 }
+
+/*  Both methods have same Time Complexity : O(n^2)
+    But reduced iterations: 15 -> 6
+ */
