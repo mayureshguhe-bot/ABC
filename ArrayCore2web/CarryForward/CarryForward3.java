@@ -16,14 +16,14 @@ public class CarryForward3 {
 
         leftMax[0]=arr[0];
 
-        for(int i=1;i<n;i++){
-            leftMax[i]=Integer.max(leftMax[i-1], arr[i]);                // TC: O(n)
-            // if(arr[i]>leftMax[i-1]){
-            //     leftMax[i]=arr[i];
-            // }
-            // else{
-            //     leftMax[i]=leftMax[i-1];
-            // }
+        for(int i=1;i<n;i++){                               // TC: O(n)
+           // leftMax[i]=Integer.max(leftMax[i-1], arr[i]);    // One Line Shortcut            
+            if(arr[i]>leftMax[i-1]){
+                leftMax[i]=arr[i];
+            }
+            else{
+                leftMax[i]=leftMax[i-1];
+            }
         }
 
         for(int x:leftMax){
