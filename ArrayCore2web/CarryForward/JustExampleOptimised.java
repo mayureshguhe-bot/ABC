@@ -1,6 +1,6 @@
 public class JustExampleOptimised {
     public static void main(String[] args) {
-        char[] arr = new char[] { 'a', 'b', 'e', 'g', 'a', 'g' };
+        char[] arr = new char[] { 'a', 'b', 'e', 'a', 'g', 'a' };
         int gcount=0;
         int count=0;
 
