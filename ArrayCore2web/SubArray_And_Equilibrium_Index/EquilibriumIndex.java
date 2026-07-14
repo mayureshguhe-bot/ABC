@@ -30,15 +30,15 @@ public class EquilibriumIndex {
         int[] arr =new int[]{-7,1,5,2,-4,3,0};
         int flag=0;
 
-    for(int i=0;i<arr.length;i++){
+    for(int i=0;i<arr.length;i++){           // TC : O(N)
         int leftSum=0;
         int rightSum=0;
 
-        for(int j=0;j<i;j++){
-            leftSum+=arr[j];
-        }
-
-        for(int j=i+1;j<arr.length;j++){
+        for(int j=0;j<i;j++){           // TC : O(N)
+            leftSum+=arr[j];                        
+        }                                   // Combined TC : O(2N)
+                                                       
+        for(int j=i+1;j<arr.length;j++){     // TC : O(N)
             rightSum+=arr[j];
         }
 
@@ -56,3 +56,4 @@ public class EquilibriumIndex {
     
 }
 
+// Time Complexity: O(N^2)
