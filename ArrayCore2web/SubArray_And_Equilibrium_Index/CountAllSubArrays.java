@@ -10,14 +10,14 @@ public class CountAllSubArrays {
 
 // Brute-Force Approach:
     // for(int i=0;i<arr.length;i++){
-    //     for(int j=i;j<arr.length;j++){
+    //     for(int j=i;j<arr.length;j++){       // TC : O(N^2)
     //                 count++;
     //     }
     // }
     
 // Optimised Approach:  Using Gauss Theorem
 
-    count = (arr.length*(arr.length+1))/2;
+    count = (arr.length*(arr.length+1))/2;       // TC : O(1)
     System.out.println(count);
 
     }
