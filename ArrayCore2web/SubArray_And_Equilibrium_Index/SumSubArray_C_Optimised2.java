@@ -17,4 +17,4 @@ public class SumSubArray_C_Optimised2 {
 
 }
 
-// Time Complexity: O(N^2) , Space Complexity: O(N)
+// Time Complexity: O(N^2) , Space Complexity: O(1)
