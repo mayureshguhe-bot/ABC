@@ -17,3 +17,5 @@ public class TotalSumSubArray {
     }
     
 }
+
+// Time Complexity : O(N^2)
