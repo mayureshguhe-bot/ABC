@@ -15,10 +15,10 @@ public class MaxSubarraySumLenK {
         int end = k - 1;
         int maxEle = Integer.MIN_VALUE;
 
-        while (end < arr.length) {
+        while (end < arr.length) {            // O(N-k)
             int sum = 0;
 
-            for (int i = start; i <= end; i++) {
+            for (int i = start; i <= end; i++) {     // O(N)
                 sum += arr[i];
             }
             if (sum > maxEle)
@@ -31,3 +31,7 @@ public class MaxSubarraySumLenK {
         System.out.println(maxEle);
     }
 }
+
+/*  Time Complexity: O((N-k)*N) == O(N^2)
+*   Space Complexity: O(1)
+*/
