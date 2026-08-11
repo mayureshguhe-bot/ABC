@@ -1,3 +1,4 @@
+package Basics;
 //Counts thse number of factors| Time Complexity:O(n)
 
 import java.util.*;

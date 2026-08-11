@@ -1,3 +1,4 @@
+package Basics;
 // Sum of N natural numbers-Time Complexity:O(n)
 
 import java.util.Scanner;

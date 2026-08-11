@@ -1,3 +1,4 @@
+package Basics;
 // Best Optimised way: Time Complexity- o(√n)
 
 import java.util.Scanner;

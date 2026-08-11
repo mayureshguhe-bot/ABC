@@ -1,3 +1,4 @@
+package Basics;
 // Optimised Version-Time Complexity:O(1)
 
 import java.util.Scanner;

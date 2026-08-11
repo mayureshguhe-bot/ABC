@@ -1,3 +1,4 @@
+package Basics;
 // A more Optimised Way | Time Complexity: O(n) but itr: n/2
 
 import java.util.Scanner;
