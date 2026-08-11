@@ -49,6 +49,7 @@ public class PrefixSum1 {
             }
             System.out.println("Sum = " + sum);
         }
+        sc.close();
 
     }
 

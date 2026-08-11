@@ -30,5 +30,6 @@ public class Array$2 {
         }
 
         System.out.println(Arrays.toString(arr));
+        sc.close();
     }
 }
