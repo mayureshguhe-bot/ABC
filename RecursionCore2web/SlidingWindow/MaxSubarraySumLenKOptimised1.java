@@ -12,7 +12,7 @@ public class MaxSubarraySumLenKOptimised1 {
 
         pfArr[0] = arr[0];
 
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {         // TC: O(N) , SC: O(N)
             pfArr[i] = pfArr[i - 1] + arr[i];
         }
 
@@ -20,7 +20,7 @@ public class MaxSubarraySumLenKOptimised1 {
         int end = k - 1;
         int maxEle = Integer.MIN_VALUE;
 
-        while (end < arr.length) {
+        while (end < arr.length) {                     // TC : O(N-k)
             int sum = 0;
             if (start == 0)
                 sum = pfArr[end];
@@ -38,3 +38,6 @@ public class MaxSubarraySumLenKOptimised1 {
         System.out.println(maxEle);
     }
 }
+/* Time Complexity : O(N+N-K) == O(N) 
+*  Space Complexity : O(N)
+*/
