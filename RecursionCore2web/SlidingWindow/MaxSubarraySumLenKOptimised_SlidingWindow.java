@@ -16,7 +16,7 @@ public class MaxSubarraySumLenKOptimised_SlidingWindow {
         int end=k-1;
 
         int sum = 0;
-        for(int i = start;i<=end;i++){
+        for(int i = start;i<=end;i++){      // O(k)
             sum+=arr[i];
         }
 
@@ -24,7 +24,7 @@ public class MaxSubarraySumLenKOptimised_SlidingWindow {
          end = k;
          int maxEle = Integer.MIN_VALUE;
 
-        while(end<arr.length){
+        while(end<arr.length){                          // O(N-k)
             sum = sum - arr[start-1] + arr[end];
 
             if(sum>maxEle){
@@ -39,3 +39,6 @@ public class MaxSubarraySumLenKOptimised_SlidingWindow {
     }
     
 }
+
+// Time Complexity: O(k + N - K) == O(N)
+// Space Complexity: O(1)
